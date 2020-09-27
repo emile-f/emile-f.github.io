@@ -1,13 +1,13 @@
 {
   "name": "emile-ferrand-personal-website",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Personal website for Web Development class ",
+  "main": "index.html",
   "scripts": {
     "start": "http-server"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "http-server": "^0.12.3"
   }
