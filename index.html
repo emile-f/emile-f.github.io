@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emile Ferrand personal website | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,400;0,500;1,900&display=swap"
+    rel="stylesheet">
+  <link href="./css/down-arrow.css" rel="stylesheet">
+  <link href="./css/main.css" rel="stylesheet">
+  <script src="./js/main.js"></script>
+
+  <!-- Favicon generate by: https://favicon.io/-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <style>
+    /* DEBUGGING CODE HERE */
+  </style>
+  <script>
+    /* DEBUGGING CODE HERE */
+  </script>
+</head>
+
+<body>
+  <header id="scroll-header">
+    <nav>
+      <div class="hamburger-menu">
+        <button onclick="openDrawer()">HB</button>
+      </div>
+      <a class="logo"></a>
+      <div>
+        <a href="/#about">About</a>
+        <a href="/#experience">Education and Experience</a>
+        <a href="/projects">Projects</a>
+      </div>
+    </nav>
+  </header>
+
+  <!--Mobile Drawer Menu-->
+  <nav id="drawer" class="drawer">
+    <div>
+      <button onclick="openDrawer()">HB</button>
+    </div>
+    <a class="logo"></a>
+    <a href="/#about">About</a>
+    <a href="/#experience">Education and Experience</a>
+    <a href="/projects">Projects</a>
+  </nav>
+
+  <main>
+    <section class="header-section">
+      <div>
+        <h1 class="play-audio" onclick="playAudio()">
+          Hello there,
+        </h1>
+        <h1>
+          I'm
+          <strong>
+            Emile
+          </strong>
+        </h1>
+      </div>
+      <!--Scroll down-->
+      <div class="scroll-down" onclick="scrollDown()">
+        <div class="arrow"></div>
+      </div>
+    </section>
+    <section class="content-section">
+
+      <article id="about" class="section about">
+        <h2>About me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, officia repellat ipsum excepturi magni
+          voluptas minima voluptatum accusantium optio dolore amet error corrupti, culpa tempora impedit enim quos
+          quibusdam rem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, officia repellat ipsum excepturi magni
+          voluptas minima voluptatum accusantium optio dolore amet error corrupti, culpa tempora impedit enim quos
+          quibusdam rem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, officia repellat ipsum excepturi magni
+          voluptas minima voluptatum accusantium optio dolore amet error corrupti, culpa tempora impedit enim quos
+          quibusdam rem.</p>
+      </article>
+
+      <!-- Parallax image (code) -->
+      <article class="parallax-section parallax-1"></article>
+
+      <article class="section skills">
+        <h2>Skills</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, officia repellat ipsum excepturi magni
+          voluptas minima voluptatum accusantium optio dolore amet error corrupti, culpa tempora impedit enim quos
+          quibusdam rem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, officia repellat ipsum excepturi magni
+          voluptas minima voluptatum accusantium optio dolore amet error corrupti, culpa tempora impedit enim quos
+          quibusdam rem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, officia repellat ipsum excepturi magni
+          voluptas minima voluptatum accusantium optio dolore amet error corrupti, culpa tempora impedit enim quos
+          quibusdam rem.</p>
+      </article>
+
+
+      <article class="parallax-section parallax-2"></article>
+
+      <!-- Timeline on scroll -->
+      <article id="experience" class="section experience">
+        <h2>Education and Experience</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, officia repellat ipsum excepturi magni
+          voluptas minima voluptatum accusantium optio dolore amet error corrupti, culpa tempora impedit enim quos
+          quibusdam rem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, officia repellat ipsum excepturi magni
+          voluptas minima voluptatum accusantium optio dolore amet error corrupti, culpa tempora impedit enim quos
+          quibusdam rem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, officia repellat ipsum excepturi magni
+          voluptas minima voluptatum accusantium optio dolore amet error corrupti, culpa tempora impedit enim quos
+          quibusdam rem.</p>
+      </article>
+    </section>
+
+  </main>
+
+  <!--
+    Footer placeholder
+    This is needed so we can scroll the footer into view
+  -->
+  <div class="footer-section-placeholder"></div>
+
+  <footer>
+    <section>
+      <h2>Footer here</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, officia repellat ipsum excepturi magni
+        voluptas minima voluptatum accusantium optio dolore amet error corrupti, culpa tempora impedit enim quos
+        quibusdam rem.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, officia repellat ipsum excepturi magni
+        voluptas minima voluptatum accusantium optio dolore amet error corrupti, culpa tempora impedit enim quos
+        quibusdam rem.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, officia repellat ipsum excepturi magni
+        voluptas minima voluptatum accusantium optio dolore amet error corrupti, culpa tempora impedit enim quos
+        quibusdam rem.</p>
+    </section>
+  </footer>
+
+</body>
+
+</html>
