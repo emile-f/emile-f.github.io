@@ -10,6 +10,7 @@
   <link href="./css/down-arrow.css" rel="stylesheet">
   <link href="./css/main.css" rel="stylesheet">
   <script src="./js/main.js"></script>
+  <script src="./js/timeline.js"></script>
 
   <!-- Favicon generate by: https://favicon.io/-->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -106,6 +107,108 @@
       <!-- Timeline on scroll -->
       <article id="experience" class="section experience">
         <h2>Education and Experience</h2>
+
+        <div></div>
+
+        <!-- Vertical bar -->
+        <style>
+          .section.experience {}
+
+          .section.experience .spacer {
+            width: 100%;
+            z-index: 1;
+            height: 2450px;
+            position: relative;
+          }
+
+          .section.experience .timeline {
+            height: calc(100% - 240px);
+            width: 8px;
+            position: absolute;
+            background-color: red;
+            top: 120px;
+            left: calc(50% - 4px);
+          }
+
+          .section.experience .timeline .timeline-dot {
+            background-color: blue;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: -6px;
+            left: -6px;
+            border-radius: 15px;
+          }
+
+          .section.experience .timeline .timeline-dot.end {
+            bottom: 0;
+          }
+
+          .section.experience .timeline .timeline-dot.student {
+            /* student background image here */
+          }
+
+          .section.experience .timeline .timeline-dot.dot-1 {
+            top: 300px;
+          }
+
+          .section.experience .timeline .timeline-dot.dot-2 {
+            top: 600px;
+          }
+
+          .section.experience .timeline .timeline-dot.dot-3 {
+            top: 900px;
+          }
+
+          .section.experience .timeline .timeline-dot.dot-4 {
+            top: 1200px;
+          }
+
+          .section.experience .timeline .timeline-dot.dot-5 {
+            top: 1500px;
+          }
+
+          .section.experience .timeline .timeline-dot.dot-6 {
+            top: 1800px;
+          }
+
+          .section.experience .timeline .timeline-dot.dot-7 {
+            top: 2100px;
+          }
+
+          .section.experience .timeline .timeline-dot.dot-8 {
+            top: 2400px;
+          }
+        </style>
+
+        <div class="spacer"></div>
+        <div class="timeline">
+          <div class="timeline-dot"></div>
+          <div class="timeline-dot student dot-1"></div> <!-- from - to  High-school -->
+          <div class="timeline-dot student dot-2"></div> <!-- start college -->
+          <div class="timeline-dot student dot-3"></div> <!-- college project: otwoo -->
+          <div class="timeline-dot student dot-4"></div> <!-- college internship: Proceedix frontend-dev -->
+          <div class="timeline-dot student dot-5"></div> <!-- end college -->
+          <div class="timeline-dot student dot-6"></div> <!-- Student work: Proceedix android developer -->
+          <div class="timeline-dot student dot-7"></div> <!-- Internship Storied: Full-stack developer -->
+          <div class="timeline-dot student dot-8"></div> <!-- start Masters -->
+          <div class="timeline-dot end"></div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, officia repellat ipsum excepturi magni
           voluptas minima voluptatum accusantium optio dolore amet error corrupti, culpa tempora impedit enim quos
           quibusdam rem.</p>
@@ -114,7 +217,7 @@
           quibusdam rem.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, officia repellat ipsum excepturi magni
           voluptas minima voluptatum accusantium optio dolore amet error corrupti, culpa tempora impedit enim quos
-          quibusdam rem.</p>
+          quibusdam rem.</p> -->
       </article>
     </section>
 

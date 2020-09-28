@@ -143,6 +143,7 @@ header .logo {
   padding: 60px;
   width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 
 .content-section .parallax-section {
