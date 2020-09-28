@@ -7,6 +7,8 @@
   <title>Emile Ferrand personal website | Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,400;0,500;1,900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link href="./css/down-arrow.css" rel="stylesheet">
   <link href="./css/main.css" rel="stylesheet">
   <script src="./js/main.js"></script>
@@ -114,20 +116,82 @@
         <style>
           .section.experience {}
 
-          .section.experience .spacer {
+          .section.experience .timeline {
             width: 100%;
+            padding-left: 60px;
+            padding-right: 60px;
             z-index: 1;
-            height: 2450px;
+            height: 2750px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+          }
+
+          .section.experience .timeline .timeline-line {
+            height: calc(100% - 50px);
+            width: 8px;
+            background-color: red;
             position: relative;
           }
 
-          .section.experience .timeline {
-            height: calc(100% - 240px);
-            width: 8px;
-            position: absolute;
-            background-color: red;
+          .section.experience .timeline-cards {
             top: 120px;
-            left: calc(50% - 4px);
+            width: 100%;
+            z-index: 2;
+            height: 2700px;
+            position: absolute;
+            /* background-color: rgba(114, 202, 114, 0.473); */
+          }
+
+          .section.experience .timeline-cards .timeline-card {
+            height: 300px;
+            width: 400px;
+            background-color: white;
+            position: absolute;
+            border-radius: 30px;
+            -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+            -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+          }
+
+          .section.experience .timeline-cards .timeline-card.left {
+            left: 9%;
+          }
+
+          .section.experience .timeline-cards .timeline-card.right {
+            right: 9%;
+          }
+
+          .section.experience .timeline-cards .timeline-card.card-1 {
+            top: 165px;
+          }
+
+          .section.experience .timeline-cards .timeline-card.card-2 {
+            top: 465px;
+          }
+
+          .section.experience .timeline-cards .timeline-card.card-3 {
+            top: 765px;
+          }
+
+          .section.experience .timeline-cards .timeline-card.card-4 {
+            top: 1065px;
+          }
+
+          .section.experience .timeline-cards .timeline-card.card-5 {
+            top: 1365px;
+          }
+
+          .section.experience .timeline-cards .timeline-card.card-6 {
+            top: 1665px;
+          }
+
+          .section.experience .timeline-cards .timeline-card.card-7 {
+            top: 1965px;
+          }
+
+          .section.experience .timeline-cards .timeline-card.card-8 {
+            top: 2265px;
           }
 
           .section.experience .timeline .timeline-dot {
@@ -136,16 +200,23 @@
             height: 20px;
             position: absolute;
             top: -6px;
-            left: -6px;
             border-radius: 15px;
           }
 
-          .section.experience .timeline .timeline-dot.end {
-            bottom: 0;
+          .section.experience .timeline .timeline-dot.dot {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
 
-          .section.experience .timeline .timeline-dot.student {
-            /* student background image here */
+          .section.experience .timeline .timeline-dot>i {
+            color: white;
+          }
+
+          .section.experience .timeline .timeline-dot.end {
+            top: 2700px;
           }
 
           .section.experience .timeline .timeline-dot.dot-1 {
@@ -181,31 +252,70 @@
           }
         </style>
 
-        <div class="spacer"></div>
         <div class="timeline">
+          <div class="timeline-line"></div>
           <div class="timeline-dot"></div>
-          <div class="timeline-dot student dot-1"></div> <!-- from - to  High-school -->
-          <div class="timeline-dot student dot-2"></div> <!-- start college -->
-          <div class="timeline-dot student dot-3"></div> <!-- college project: otwoo -->
-          <div class="timeline-dot student dot-4"></div> <!-- college internship: Proceedix frontend-dev -->
-          <div class="timeline-dot student dot-5"></div> <!-- end college -->
-          <div class="timeline-dot student dot-6"></div> <!-- Student work: Proceedix android developer -->
-          <div class="timeline-dot student dot-7"></div> <!-- Internship Storied: Full-stack developer -->
-          <div class="timeline-dot student dot-8"></div> <!-- start Masters -->
+          <div class="timeline-dot dot dot-1">
+            <!-- from - to  High-school -->
+            <i class="fa fa-users" aria-hidden="true"></i>
+          </div>
+          <div class="timeline-dot dot dot-2">
+            <!-- start college -->
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+          </div>
+          <div class="timeline-dot dot dot-3">
+            <!-- college project: otwoo -->
+            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+          </div>
+          <div class="timeline-dot dot dot-4">
+            <!-- college internship: Proceedix frontend-dev -->
+            <i class="fa fa-briefcase" aria-hidden="true"></i>
+          </div>
+          <div class="timeline-dot dot dot-5">
+            <!-- end college -->
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+          </div>
+          <div class="timeline-dot dot dot-6">
+            <!-- Student work: Proceedix android developer -->
+            <i class="fa fa-briefcase" aria-hidden="true"></i>
+          </div>
+          <div class="timeline-dot dot dot-7">
+            <!-- Internship Storied: Full-stack developer -->
+            <i class="fa fa-briefcase" aria-hidden="true"></i>
+          </div>
+          <div class="timeline-dot dot dot-8">
+            <!-- start Masters -->
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+          </div>
           <div class="timeline-dot end"></div>
         </div>
 
+        <div class="timeline-cards">
+          <div class="timeline-card left card-1">
 
+          </div>
+          <div class="timeline-card right card-2">
 
+          </div>
+          <div class="timeline-card left card-3">
 
+          </div>
+          <div class="timeline-card right card-4">
 
+          </div>
+          <div class="timeline-card left card-5">
 
+          </div>
+          <div class="timeline-card right card-6">
 
+          </div>
+          <div class="timeline-card left card-7">
 
+          </div>
+          <div class="timeline-card right card-8">
 
-
-
-
+          </div>
+        </div>
 
 
         <!-- 
