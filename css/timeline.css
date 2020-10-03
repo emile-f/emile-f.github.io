@@ -22,8 +22,9 @@
   top: 120px;
   width: calc(100% - 120px);
   z-index: 2;
-  height: 2700px;
+  height: 2420px;
   position: absolute;
+  overflow: hidden;
 }
 
 .section.experience .timeline-cards .timeline-card {
@@ -188,13 +189,28 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .section.experience {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .section.experience .timeline {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section.experience .timeline-cards {
+    width: calc(100% - 30px);
+  }
+
   .section.experience .timeline-cards .timeline-card.left {
     transform: translate3d(-50px, 0, 0);
-    left: -3%;
+    left: 1%;
   }
 
   .section.experience .timeline-cards .timeline-card.right {
-    right: -3%;
+    right: 1%;
     transform: translate3d(50px, 0, 0);
   }
 }
@@ -206,20 +222,15 @@
 
   .section.experience .timeline-cards .timeline-card.left {
     transform: translate3d(0, 0, 0);
-    left: 0;
+    left: 2px;
   }
 
   .section.experience .timeline-cards .timeline-card.right {
-    right: 0;
+    right: 2px;
     transform: translate3d(0, 0, 0);
   }
 
   .section.experience .timeline-cards .timeline-card {
-    width: calc(100% - 30px);
-  }
-
-  .section.experience .timeline-cards {
-    left: 15px;
-    width: calc(100% - 30px);
+    width: calc(100% - 34px);
   }
 }
