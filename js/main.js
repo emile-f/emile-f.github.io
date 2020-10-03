@@ -1,13 +1,42 @@
+var drawer;
+var HelloThereAudio = new Audio('./assets/hello-there.mp3');
+var maxScrollDepth = 0;
+
+// Function to add a click handler to a given element
+function addClickHandler(elementId, functionName) {
+  var element = document.getElementById(elementId);
+  if (element) {
+    element.addEventListener('click', functionName);
+  } else {
+    console.error('Failed to click handler to element with id:', elementId);
+  }
+}
 
 // listen to the window load event so we can start getting elements from the page
 window.addEventListener('load', function () {
+
+  // mobile menu
+  // id: open-mobile-menu, close-mobile-menu
+  addClickHandler('open-mobile-menu', openDrawer);
+  addClickHandler('close-mobile-menu', openDrawer);
+
+  drawer = document.getElementById("drawer");
+
+  // play audio fragment on click
+  // id: play-audio
+  addClickHandler('play-audio', playAudioFile);
+
+  // scroll to next section on page
+  // id: scroll-down
+  addClickHandler('scroll-down', scrollDown);
+
   // Get header
   var scrollHeader = document.getElementById('scroll-header');
+
 
   // Listen to scroll
   if (scrollHeader) {
     window.addEventListener('scroll', function () {
-
       // if we scroll over the first page then change background color to white
       if (window.scrollY > window.innerHeight) {
         scrollHeader.classList.add('active');
@@ -19,15 +48,8 @@ window.addEventListener('load', function () {
   }
 });
 
-// Play audio file on click
-var HelloThereAudio = new Audio('./assets/hello-there.mp3');
-function playAudio() {
-  HelloThereAudio.play();
-}
-
 // Open mobile hamburger menu
 function openDrawer() {
-  var drawer = document.getElementById("drawer");
   if (drawer) {
     if (drawer.className.includes("open")) {
       drawer.classList.remove("open");
@@ -35,6 +57,11 @@ function openDrawer() {
       drawer.classList.add("open");
     }
   }
+}
+
+// Play audio file on click
+function playAudioFile() {
+  HelloThereAudio.play();
 }
 
 // Cover page scroll down to second part of the page

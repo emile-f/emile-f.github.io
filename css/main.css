@@ -5,7 +5,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 html {
@@ -126,7 +126,7 @@ header .logo {
 .header-section > div h1,
 .header-section > div strong {
   margin: 0 0 30px;
-  font-size: 70px;
+  font-size: 85px;
   font-weight: 300;
 }
 
@@ -137,13 +137,20 @@ header .logo {
 
 .content-section {
   width: 100%;
+  position: relative;
 }
 
 .content-section .section {
   padding: 60px;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
+}
+
+.content-section .section h2 {
+  font-weight: 300;
+  font-size: 50px;
+  text-align: center;
 }
 
 .content-section .parallax-section {
@@ -171,6 +178,25 @@ header .logo {
 
 .content-section .section > *:not(:last-child) {
   margin-bottom: 30px;
+}
+
+.content-section .section.about,
+.content-section .section.skills {
+  width: 500px;
+}
+
+.content-section .section .column {
+  display: flex;
+  height: 600px;
+}
+
+.content-section .section .row:not(:last-child) {
+  padding-bottom: 60px;
+}
+
+.content-section .section .row h4 {
+  font-size: 25px;
+  margin-bottom: 15px;
 }
 
 .content-section .section p {
