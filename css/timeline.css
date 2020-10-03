@@ -215,7 +215,7 @@
   }
 
   .section.experience .timeline-cards .timeline-card {
-    width: 100%;
+    width: calc(100% - 30px);
   }
 
   .section.experience .timeline-cards {

@@ -43,9 +43,10 @@ header.active {
 }
 
 header nav {
-  width: 1200px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 header a {
@@ -54,6 +55,8 @@ header a {
 
 header .hamburger-menu {
   display: none;
+  height: 100%;
+  width: 46px;
 }
 
 header .logo {
@@ -62,6 +65,19 @@ header .logo {
   height: 52px;
   background-size: cover;
 }
+header.active .menu a {
+  color: #364750;
+}
+header .menu a {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+header.active .menu a:hover {
+  border-bottom: solid 4px #364750;
+}
 
 .drawer {
   width: 0vw;
@@ -69,12 +85,13 @@ header .logo {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  background-color: #424242;
+  background-color: #364750;
   color: hsla(0, 0%, 100%, 0.97);
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: 10001;
 }
 
 .drawer a {
@@ -82,6 +99,11 @@ header .logo {
   color: inherit;
   text-decoration: none;
   font-style: sans-serif;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
 }
 
 .drawer.open {
@@ -182,7 +204,7 @@ header .logo {
 
 .content-section .section.about,
 .content-section .section.skills {
-  width: 500px;
+  max-width: 500px;
 }
 
 .content-section .section .column {
@@ -223,4 +245,10 @@ footer {
 footer > section {
   width: 1200px;
   padding: 60px;
+}
+
+@media screen and (max-width: 480px) {
+  header .menu {
+    display: none;
+  }
 }

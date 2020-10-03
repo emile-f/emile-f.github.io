@@ -18,6 +18,7 @@
   <link href="./css/down-arrow.css" rel="stylesheet">
   <link href="./css/main.css" rel="stylesheet">
   <link href="./css/timeline.css" rel="stylesheet">
+  <link href="./css/hamburger.css" rel="stylesheet">
 
   <!-- JS files -->
   <script src="./js/main.js"></script>
@@ -40,11 +41,11 @@
 <body>
   <header id="scroll-header">
     <nav>
-      <div class="hamburger-menu">
-        <button id="open-mobile-menu">HB</button>
+      <div id="open-mobile-menu" class="hamburger-menu">
+        <span></span>
       </div>
       <a class="logo"></a>
-      <div>
+      <div class="menu">
         <a href="/#about">About</a>
         <a href="/#experience">Education and Experience</a>
         <a href="/projects">Projects</a>
@@ -54,8 +55,8 @@
 
   <!--Mobile Drawer Menu-->
   <nav id="drawer" class="drawer">
-    <div>
-      <button id="close-mobile-menu">HB</button>
+    <div id="close-mobile-menu" class="hamburger-menu close">
+      <span></span>
     </div>
     <a class="logo"></a>
     <a href="/#about">About</a>
