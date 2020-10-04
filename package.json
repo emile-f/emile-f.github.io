@@ -1,7 +1,7 @@
 {
   "name": "emile-ferrand-personal-website",
   "version": "1.0.0",
-  "description": "Personal website for Web Development class ",
+  "description": "Personal website for Web Development class.",
   "main": "index.html",
   "scripts": {
     "start": "http-server -c-1",
