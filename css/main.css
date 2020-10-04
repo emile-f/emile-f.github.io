@@ -76,7 +76,7 @@ header .hamburger-menu {
 
 header .logo {
   width: 52px;
-  /* background-image: url(./assets/logo.png); */
+  /* background-image: url(./assets/logo.png); Add icon later */
   height: 52px;
   background-size: cover;
 }
@@ -125,7 +125,6 @@ header.active .menu a:hover {
   width: 70vw;
 }
 
-/* TODO: Make cover image smaller */
 .header-section {
   padding-top: calc(50vh - 115px);
   padding-bottom: calc(50vh - 115px);
@@ -175,6 +174,10 @@ header.active .menu a:hover {
 .content-section {
   width: 100%;
   position: relative;
+}
+
+.content-section .hidden {
+  display: none;
 }
 
 .content-section .section {
@@ -245,7 +248,6 @@ header.active .menu a:hover {
 }
 
 footer {
-  /* padding: 60px; */
   z-index: 1;
   width: 100%;
   margin: 0 auto;
