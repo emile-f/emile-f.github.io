@@ -8,7 +8,7 @@ function addClickHandler(elementId, functionName) {
   if (element) {
     element.addEventListener('click', functionName);
   } else {
-    console.error('Failed to click handler to element with id:', elementId);
+    console.warn('Failed to add click handler to element with id:', elementId);
   }
 }
 
@@ -32,13 +32,17 @@ window.addEventListener('load', function () {
 
   // Get header
   var scrollHeader = document.getElementById('scroll-header');
+  var scrollBody = document.getElementById('scroll-body');
 
+  if (scrollBody.scrollHeight < window.innerHeight) {
+    scrollHeader.classList.add('active');
+  }
 
   // Listen to scroll
   if (scrollHeader) {
     window.addEventListener('scroll', function () {
       // if we scroll over the first page then change background color to white
-      if (window.scrollY > window.innerHeight) {
+      if (window.scrollY > window.innerHeight || scrollBody.scrollHeight < window.innerHeight) {
         scrollHeader.classList.add('active');
       } else {
         // If not remove the active class again

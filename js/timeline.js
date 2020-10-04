@@ -16,7 +16,6 @@ window.addEventListener('load', function () {
     timelineScrollTop = rect.top - window.innerHeight;
     timelineHeight = rect.height;
   }
-  console.log('before', timelineScrollTop, timelineHeight)
 
   // init timeline intersection observer
   let options = {
@@ -34,7 +33,6 @@ window.addEventListener('load', function () {
       if (maxScrollDepth < window.scrollY) { // Don't animate the timeline up only down
         maxScrollDepth = window.scrollY; // Don't animate twice
         if (maxScrollDepth >= timelineScrollTop) { // only start animating when the timeline is visible
-          console.log('test scroll', Math.min(Math.max(Math.round(((maxScrollDepth - timelineScrollTop - 50) / timelineHeight) * 100), 0), 100));
           timelineLine.style.height = Math.min(Math.max(Math.round(((maxScrollDepth - timelineScrollTop - 50) / timelineHeight) * 100), 0), 100) + '%';
         }
       }
@@ -53,7 +51,6 @@ function initTimeLine(className, observer) {
 
 function scrolledIntoView(entries, observer) {
   entries.forEach(entry => {
-    console.log('entry', entry);
     if (entry && entry.isIntersecting) {
       entry.target.classList.add('active');
       observer.unobserve(entry.target);
