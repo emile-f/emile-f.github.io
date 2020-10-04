@@ -1,52 +1,54 @@
 var drawer;
-var HelloThereAudio = new Audio('./assets/hello-there.mp3');
+var HelloThereAudio = new Audio("./assets/hello-there.mp3");
 var maxScrollDepth = 0;
 
 // Function to add a click handler to a given element
 function addClickHandler(elementId, functionName) {
   var element = document.getElementById(elementId);
   if (element) {
-    element.addEventListener('click', functionName);
+    element.addEventListener("click", functionName);
   } else {
-    console.warn('Failed to add click handler to element with id:', elementId);
+    console.warn("Failed to add click handler to element with id:", elementId);
   }
 }
 
 // listen to the window load event so we can start getting elements from the page
-window.addEventListener('load', function () {
-
+window.addEventListener("load", function () {
   // mobile menu
   // id: open-mobile-menu, close-mobile-menu
-  addClickHandler('open-mobile-menu', openDrawer);
-  addClickHandler('close-mobile-menu', openDrawer);
+  addClickHandler("open-mobile-menu", openDrawer);
+  addClickHandler("close-mobile-menu", openDrawer);
 
   drawer = document.getElementById("drawer");
 
   // play audio fragment on click
   // id: play-audio
-  addClickHandler('play-audio', playAudioFile);
+  addClickHandler("play-audio", playAudioFile);
 
   // scroll to next section on page
   // id: scroll-down
-  addClickHandler('scroll-down', scrollDown);
+  addClickHandler("scroll-down", scrollDown);
 
   // Get header
-  var scrollHeader = document.getElementById('scroll-header');
-  var scrollBody = document.getElementById('scroll-body');
+  var scrollHeader = document.getElementById("scroll-header");
+  var scrollBody = document.getElementById("scroll-body");
 
   if (scrollBody.scrollHeight < window.innerHeight) {
-    scrollHeader.classList.add('active');
+    scrollHeader.classList.add("active");
   }
 
   // Listen to scroll
   if (scrollHeader) {
-    window.addEventListener('scroll', function () {
+    window.addEventListener("scroll", function () {
       // if we scroll over the first page then change background color to white
-      if (window.scrollY > window.innerHeight || scrollBody.scrollHeight < window.innerHeight) {
-        scrollHeader.classList.add('active');
+      if (
+        window.scrollY > window.innerHeight ||
+        scrollBody.scrollHeight < window.innerHeight
+      ) {
+        scrollHeader.classList.add("active");
       } else {
         // If not remove the active class again
-        scrollHeader.classList.remove('active');
+        scrollHeader.classList.remove("active");
       }
     });
   }

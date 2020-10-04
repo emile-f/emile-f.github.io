@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "http-server -c-1",
-    "format": "prettier ./"
+    "format": "prettier --write js/*.js css/*.css *.html"
   },
   "author": "",
   "license": "MIT",

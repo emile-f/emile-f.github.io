@@ -1,264 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal website Emile Ferrand" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, Web-devoloper, developer, Full-stack"
+    />
+    <meta name="author" content="Emile Ferrand" />
+    <title>Emile Ferrand personal website | Home</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Personal website Emile Ferrand">
-  <meta name="keywords" content="HTML, CSS, JavaScript, Web-devoloper, developer, Full-stack">
-  <meta name="author" content="Emile Ferrand">
-  <title>Emile Ferrand personal website | Home</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,400;0,500;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
 
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,400;0,500;1,900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- CCS files -->
+    <link href="./css/down-arrow.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/timeline.css" rel="stylesheet" />
+    <link href="./css/hamburger.css" rel="stylesheet" />
 
+    <!-- JS files -->
+    <script src="./js/main.js"></script>
+    <script src="./js/timeline.js"></script>
 
-  <!-- CCS files -->
-  <link href="./css/down-arrow.css" rel="stylesheet">
-  <link href="./css/main.css" rel="stylesheet">
-  <link href="./css/timeline.css" rel="stylesheet">
-  <link href="./css/hamburger.css" rel="stylesheet">
+    <!-- Favicon generate by: https://favicon.io/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-  <!-- JS files -->
-  <script src="./js/main.js"></script>
-  <script src="./js/timeline.js"></script>
+    <style>
+      /* DEBUGGING CODE HERE */
+    </style>
+    <script>
+      /* DEBUGGING CODE HERE */
+    </script>
+  </head>
 
-  <!-- Favicon generate by: https://favicon.io/ -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <body>
+    <header id="scroll-header">
+      <nav>
+        <div id="open-mobile-menu" class="hamburger-menu">
+          <span></span>
+        </div>
+        <a class="logo"></a>
+        <div class="menu">
+          <a href="/#header">Home</a>
+          <a href="/#about">About</a>
+          <a href="/#experience">Education and Experience</a>
+          <a href="/projects">Projects</a>
+        </div>
+      </nav>
+    </header>
 
-  <style>
-    /* DEBUGGING CODE HERE */
-  </style>
-  <script>
-    /* DEBUGGING CODE HERE */
-  </script>
-</head>
-
-<body>
-  <header id="scroll-header">
-    <nav>
-      <div id="open-mobile-menu" class="hamburger-menu">
+    <!--Mobile Drawer Menu-->
+    <nav id="drawer" class="drawer">
+      <div id="close-mobile-menu" class="hamburger-menu close">
         <span></span>
       </div>
       <a class="logo"></a>
-      <div class="menu">
-        <a href="/#header">Home</a>
-        <a href="/#about">About</a>
-        <a href="/#experience">Education and Experience</a>
-        <a href="/projects">Projects</a>
-      </div>
+      <a href="/#header">Home</a>
+      <a href="/#about">About</a>
+      <a href="/#experience">Education and Experience</a>
+      <a href="/projects">Projects</a>
     </nav>
-  </header>
 
-  <!--Mobile Drawer Menu-->
-  <nav id="drawer" class="drawer">
-    <div id="close-mobile-menu" class="hamburger-menu close">
-      <span></span>
-    </div>
-    <a class="logo"></a>
-    <a href="/#header">Home</a>
-    <a href="/#about">About</a>
-    <a href="/#experience">Education and Experience</a>
-    <a href="/projects">Projects</a>
-  </nav>
-
-  <main id="scroll-body">
-    <section id="header" class="header-section">
-      <div>
-        <h1 id="play-audio" class="play-audio">
-          Hello there,
-        </h1>
-        <h1>
-          I'm
-          <strong>
-            Emile
-          </strong>
-        </h1>
-      </div>
-      <!--Scroll down-->
-      <div id="scroll-down" class="scroll-down">
-        <div class="arrow"></div>
-      </div>
-    </section>
-    <section class="content-section">
-
-      <article id="about" class="section about">
-        <h2>About me</h2>
-        <p> My name is <b>Emile Ferrand</b> and I'm a Full-stack devoloper from Belgium, I'm passionate about
-          programming and everything TECH in general. I have experience with lots of programming languages but my main
-          programming language is Javascript.</p>
-      </article>
-
-      <!-- Parallax image (code) -->
-      <article class="parallax-section parallax-1"></article>
-
-      <article class="section skills">
-        <h2>Skills</h2>
+    <main id="scroll-body">
+      <section id="header" class="header-section">
         <div>
-          <div class="row">
-            <h4>Design</h4>
-            <p>Adobe Photoshop, Adobe Illustrator</p>
-          </div>
-          <div class="row">
-            <h4>Frontend</h4>
-            <p>React, Angular, CSS (Less, Sass, Styled components), Redux, JavaScript, TypeScript</p>
-          </div>
-          <div class="row">
-            <h4>Platform</h4>
-            <p>Android, Electron</p>
-          </div>
-          <div class="row">
-            <h4>Backend</h4>
-            <p>.NET Core (C#), Express (Node)</p>
-          </div>
-          <div class="row">
-            <h4>Storage</h4>
-            <p>MySQL, SQL, MongoDB, Elasticsearch</p>
-          </div>
+          <h1 id="play-audio" class="play-audio">Hello there,</h1>
+          <h1>
+            I'm
+            <strong> Emile </strong>
+          </h1>
         </div>
-      </article>
-
-      <article class="parallax-section parallax-2"></article>
-
-      <!-- Timeline on scroll -->
-      <article id="experience" class="section experience">
-        <h2>Education and Experience</h2>
-
-        <div id="timeline" class="timeline">
-          <div id="timeline-line" class="timeline-line"></div>
-          <div class="timeline-dot"></div>
-          <div class="timeline-dot dot dot-1">
-            <!-- from - to  High-school -->
-            <i class="fa fa-users" aria-hidden="true"></i>
-          </div>
-          <div class="timeline-dot dot dot-2">
-            <!-- start college -->
-            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-          </div>
-          <div class="timeline-dot dot dot-3">
-            <!-- college project: otwoo -->
-            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-          </div>
-          <div class="timeline-dot dot dot-4">
-            <!-- college internship: Proceedix frontend-dev -->
-            <i class="fa fa-briefcase" aria-hidden="true"></i>
-          </div>
-          <div class="timeline-dot dot dot-5">
-            <!-- Student work: Proceedix android developer -->
-            <i class="fa fa-briefcase" aria-hidden="true"></i>
-          </div>
-          <div class="timeline-dot dot dot-6">
-            <!-- Internship Storied: Full-stack developer -->
-            <i class="fa fa-briefcase" aria-hidden="true"></i>
-          </div>
-          <div class="timeline-dot dot dot-7">
-            <!-- start Masters -->
-            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-          </div>
-          <div class="timeline-dot end"></div>
+        <!--Scroll down-->
+        <div id="scroll-down" class="scroll-down">
+          <div class="arrow"></div>
         </div>
+      </section>
+      <section class="content-section">
+        <article id="about" class="section about">
+          <h2>About me</h2>
+          <p>
+            My name is <b>Emile Ferrand</b> and I'm a Full-stack devoloper from
+            Belgium, I'm passionate about programming and everything TECH in
+            general. I have experience with lots of programming languages but my
+            main programming language is Javascript.
+          </p>
+        </article>
 
-        <div class="timeline-cards">
-          <div class="timeline-card left card-1">
-            <p class="date"> 2011 - 2015 </p>
-            <h4 class="title">Electromechanical engineering</h4>
-            <p class="where">High-school VTI-Torhout</p>
-          </div>
-          <div class="timeline-card right card-2">
-            <p class="date"> 2015 - 2018 </p>
-            <h4 class="title">New Media & Communication Technology</h4>
-            <p class="where">Hogeschool West-Vlaanderen (Howest) </p>
-            <p class="description">
-              Following the Web and app development trajectory, which involves creating Full-stack solution for android
-              and browsers
-            </p>
-            <img alt="Hogeschool West-Vlaanderen (Howest)" src=".//assets/companies/howest.png">
-          </div>
-          <div class="timeline-card left card-3">
-            <p class="date"> 2018 </p>
-            <h4 class="title">startup project</h4>
-            <p class="where">Otwoo</p>
-            <p class="description">
-              With our startup we want to revolutionize shopping by bringing the online shopping experience to your
-              local store creating a hybrid store concept.
-            </p>
-            <img alt="startup project: Otwoo" src=".//assets/companies/otwoo.png">
-          </div>
-          <div class="timeline-card right card-4">
-            <p class="date"> 2018 </p>
-            <h4 class="title">frontend developer intern</h4>
-            <p class="where">Proceedix</p>
-            <p class="description">
-              Extend Proceedix software stack with a web client build in react/redux.
-            </p>
-            <img alt="Proceedix" src=".//assets/companies/proceedix.png">
-          </div>
-          <div class="timeline-card left card-5">
-            <p class="date"> 2018 </p>
-            <h4 class="title">Student work: android developer</h4>
-            <p class="where">Proceedix</p>
-            <p class="description">
-              Maintain and add features to the Proceedix Android app for mobile and smartglasses.
-            </p>
-            <img alt="Proceedix" src=".//assets/companies/proceedix.png">
-          </div>
-          <div class="timeline-card right card-6">
-            <p class="date"> 2018 - 2019 </p>
-            <h4 class="title">Internship Full-stack developer</h4>
-            <p class="where">Storied</p>
-            <p class="description">
-              Help maintain and develop new features for the storied platform.
-            </p>
-            <img alt="Storied" src=".//assets/companies/storied.png">
-          </div>
-          <div class="timeline-card left card-7">
-            <p class="date"> 2020 - ... </p>
-            <h4 class="title">Align Master in computer science</h4>
-            <p class="where">Northeastern University</p>
-            <p class="description">
-              Student: Align Master in computer science at Northeastern University
-            </p>
-            <img alt="Northeastern University" src=".//assets/companies/neu.png">
-          </div>
-        </div>
-      </article>
-    </section>
+        <!-- Parallax image (code) -->
+        <article class="parallax-section parallax-1"></article>
 
-  </main>
+        <article class="section skills">
+          <h2>Skills</h2>
+          <div>
+            <div class="row">
+              <h4>Design</h4>
+              <p>Adobe Photoshop, Adobe Illustrator</p>
+            </div>
+            <div class="row">
+              <h4>Frontend</h4>
+              <p>
+                React, Angular, CSS (Less, Sass, Styled components), Redux,
+                JavaScript, TypeScript
+              </p>
+            </div>
+            <div class="row">
+              <h4>Platform</h4>
+              <p>Android, Electron</p>
+            </div>
+            <div class="row">
+              <h4>Backend</h4>
+              <p>.NET Core (C#), Express (Node)</p>
+            </div>
+            <div class="row">
+              <h4>Storage</h4>
+              <p>MySQL, SQL, MongoDB, Elasticsearch</p>
+            </div>
+          </div>
+        </article>
 
-  <!--
+        <article class="parallax-section parallax-2"></article>
+
+        <!-- Timeline on scroll -->
+        <article id="experience" class="section experience">
+          <h2>Education and Experience</h2>
+
+          <div id="timeline" class="timeline">
+            <div id="timeline-line" class="timeline-line"></div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-dot dot dot-1">
+              <!-- from - to  High-school -->
+              <i class="fa fa-users" aria-hidden="true"></i>
+            </div>
+            <div class="timeline-dot dot dot-2">
+              <!-- start college -->
+              <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            </div>
+            <div class="timeline-dot dot dot-3">
+              <!-- college project: otwoo -->
+              <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            </div>
+            <div class="timeline-dot dot dot-4">
+              <!-- college internship: Proceedix frontend-dev -->
+              <i class="fa fa-briefcase" aria-hidden="true"></i>
+            </div>
+            <div class="timeline-dot dot dot-5">
+              <!-- Student work: Proceedix android developer -->
+              <i class="fa fa-briefcase" aria-hidden="true"></i>
+            </div>
+            <div class="timeline-dot dot dot-6">
+              <!-- Internship Storied: Full-stack developer -->
+              <i class="fa fa-briefcase" aria-hidden="true"></i>
+            </div>
+            <div class="timeline-dot dot dot-7">
+              <!-- start Masters -->
+              <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            </div>
+            <div class="timeline-dot end"></div>
+          </div>
+
+          <div class="timeline-cards">
+            <div class="timeline-card left card-1">
+              <p class="date">2011 - 2015</p>
+              <h4 class="title">Electromechanical engineering</h4>
+              <p class="where">High-school VTI-Torhout</p>
+            </div>
+            <div class="timeline-card right card-2">
+              <p class="date">2015 - 2018</p>
+              <h4 class="title">New Media & Communication Technology</h4>
+              <p class="where">Hogeschool West-Vlaanderen (Howest)</p>
+              <p class="description">
+                Following the Web and app development trajectory, which involves
+                creating Full-stack solution for android and browsers
+              </p>
+              <img
+                alt="Hogeschool West-Vlaanderen (Howest)"
+                src=".//assets/companies/howest.png"
+              />
+            </div>
+            <div class="timeline-card left card-3">
+              <p class="date">2018</p>
+              <h4 class="title">startup project</h4>
+              <p class="where">Otwoo</p>
+              <p class="description">
+                With our startup we want to revolutionize shopping by bringing
+                the online shopping experience to your local store creating a
+                hybrid store concept.
+              </p>
+              <img
+                alt="startup project: Otwoo"
+                src=".//assets/companies/otwoo.png"
+              />
+            </div>
+            <div class="timeline-card right card-4">
+              <p class="date">2018</p>
+              <h4 class="title">frontend developer intern</h4>
+              <p class="where">Proceedix</p>
+              <p class="description">
+                Extend Proceedix software stack with a web client build in
+                react/redux.
+              </p>
+              <img alt="Proceedix" src=".//assets/companies/proceedix.png" />
+            </div>
+            <div class="timeline-card left card-5">
+              <p class="date">2018</p>
+              <h4 class="title">Student work: android developer</h4>
+              <p class="where">Proceedix</p>
+              <p class="description">
+                Maintain and add features to the Proceedix Android app for
+                mobile and smartglasses.
+              </p>
+              <img alt="Proceedix" src=".//assets/companies/proceedix.png" />
+            </div>
+            <div class="timeline-card right card-6">
+              <p class="date">2018 - 2019</p>
+              <h4 class="title">Internship Full-stack developer</h4>
+              <p class="where">Storied</p>
+              <p class="description">
+                Help maintain and develop new features for the storied platform.
+              </p>
+              <img alt="Storied" src=".//assets/companies/storied.png" />
+            </div>
+            <div class="timeline-card left card-7">
+              <p class="date">2020 - ...</p>
+              <h4 class="title">Align Master in computer science</h4>
+              <p class="where">Northeastern University</p>
+              <p class="description">
+                Student: Align Master in computer science at Northeastern
+                University
+              </p>
+              <img
+                alt="Northeastern University"
+                src=".//assets/companies/neu.png"
+              />
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!--
     Footer placeholder
     This is needed so we can scroll the footer into view
   -->
-  <div class="footer-section-placeholder"></div>
+    <div class="footer-section-placeholder"></div>
 
-  <footer>
-    <div class="social">
-      <a href="https://github.com/emile-f">
-        <div><i class="fa fa-github" aria-hidden="true"></i></div>
-      </a>
-      <a href="https://twitter.com/EmileFerrand">
-        <div> <i class="fa fa-twitter" aria-hidden="true"></i></div>
-      </a>
-      <a href="https://www.linkedin.com/in/ferrand-emile/">
-        <div> <i class="fa fa-linkedin-square" aria-hidden="true"></i></div>
-      </a>
-      <a href="https://www.facebook.com/emile.ferrand">
-        <div><i class="fa fa-facebook" aria-hidden="true"></i></div>
-      </a>
-    </div>
-    <div class="copyright">
-      Copyright © 2020, Emile Ferrand
-    </div>
-  </footer>
-
-</body>
-
+    <footer>
+      <div class="social">
+        <a href="https://github.com/emile-f">
+          <div><i class="fa fa-github" aria-hidden="true"></i></div>
+        </a>
+        <a href="https://twitter.com/EmileFerrand">
+          <div><i class="fa fa-twitter" aria-hidden="true"></i></div>
+        </a>
+        <a href="https://www.linkedin.com/in/ferrand-emile/">
+          <div><i class="fa fa-linkedin-square" aria-hidden="true"></i></div>
+        </a>
+        <a href="https://www.facebook.com/emile.ferrand">
+          <div><i class="fa fa-facebook" aria-hidden="true"></i></div>
+        </a>
+      </div>
+      <div class="copyright">Copyright © 2020, Emile Ferrand</div>
+    </footer>
+  </body>
 </html>
