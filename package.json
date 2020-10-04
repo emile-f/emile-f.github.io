@@ -5,13 +5,16 @@
   "main": "index.html",
   "scripts": {
     "start": "http-server -c-1",
-    "format": "prettier --write js/*.js css/*.css *.html"
+    "format": "prettier --write js/*.js css/*.css *.html",
+    "lint": "eslint js/**"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "prettier": "^2.1.2",
-    "http-server": "^0.12.3"
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "http-server": "^0.12.3",
+    "prettier": "^2.1.2"
   }
 }

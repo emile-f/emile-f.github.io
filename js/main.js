@@ -1,6 +1,5 @@
 var drawer;
 var HelloThereAudio = new Audio("./assets/hello-there.mp3");
-var maxScrollDepth = 0;
 
 // Function to add a click handler to a given element
 function addClickHandler(elementId, functionName) {
